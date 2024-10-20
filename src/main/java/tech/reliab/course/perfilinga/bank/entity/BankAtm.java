@@ -1,5 +1,10 @@
 package tech.reliab.course.perfilinga.bank.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class BankAtm {
 
     private int id;
@@ -23,30 +28,6 @@ public class BankAtm {
         this.cashWithdrawal = cashWithdrawal;
         this.cashDeposit = cashDeposit;
         this.maintenanceCost = maintenanceCost;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public Bank getBank() {
-        return bank;
-    }
-
-    public void setStatus(BankAtmStatus status) {
-        this.status = status;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setAtmMoney(double atmMoney) {
-        this.atmMoney = atmMoney;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     @Override

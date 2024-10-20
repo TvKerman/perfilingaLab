@@ -13,16 +13,18 @@ public class BankBuilder {
     private static final int MAX_RATE = 20;
     private static final double DIVIDER = 10.0;
 
+    private Random rand = new Random();
+
     private int generateId() {
-        return new Random().nextInt();
+        return rand.nextInt(Integer.MAX_VALUE);
     }
 
     private int generateRating() {
-        return new Random().nextInt(RATING_BOUND);
+        return rand.nextInt(RATING_BOUND);
     }
 
     private double generateTotalMoney() {
-        return new Random().nextInt(TOTAL_MONEY_BOUND);
+        return rand.nextInt(TOTAL_MONEY_BOUND);
     }
 
 

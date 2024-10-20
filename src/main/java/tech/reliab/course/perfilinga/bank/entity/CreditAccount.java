@@ -1,7 +1,11 @@
 package tech.reliab.course.perfilinga.bank.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import java.time.LocalDate;
 
+@Setter
+@Getter
 public class CreditAccount {
 
     private int id;
@@ -24,38 +28,6 @@ public class CreditAccount {
         this.interestRate = interestRate;
         this.employee = employee;
         this.paymentAccount = paymentAccount;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public Bank getBank() {
-        return bank;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
-    }
-
-    public void setMonthlyPayment(double monthlyPayment) {
-        this.monthlyPayment = monthlyPayment;
-    }
-
-    public void setInterestRate(double interestRate) {
-        this.interestRate = interestRate;
-    }
-
-    public void setBank(Bank bank) {
-        this.bank = bank;
-    }
-
-    public void setLoanAmount(double loanAmount) {
-        this.loanAmount = loanAmount;
     }
 
     @Override
